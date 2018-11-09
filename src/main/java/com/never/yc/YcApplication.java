@@ -21,4 +21,11 @@ public class YcApplication {
         return "Hello ：" + name + " welcome to family ";
     }
 
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String deploy(String name) {
+        return "Hello ：test for jenkins deploy ";
+    }
+
 }
